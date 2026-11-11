@@ -1,0 +1,560 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8fb;
+    color: #444;
+}
+
+section {
+    scroll-margin-top: 20px;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: #8e315d;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #ffd6e8;
+}
+
+.logo p {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd6e8;
+}
+
+.botao-header {
+    background-color: #ffd6e8;
+    color: #873052;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-header:hover {
+    background-color: white;
+    transform: translateY(-2px);
+}
+
+
+/* BANNER PRINCIPAL */
+
+.banner {
+    min-height: 450px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(90, 25, 58, 0.88),
+            rgba(90, 25, 58, 0.25)
+        ),
+        url("https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600")
+        center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    color: white;
+}
+
+.banner-conteudo {
+    max-width: 650px;
+}
+
+.banner h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.destaque {
+    color: #b64f7e;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.banner .destaque {
+    color: #ffd6e8;
+}
+
+
+/* BOTÕES */
+
+.botao {
+    display: inline-block;
+    background-color: #b64f7e;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #873052;
+    transform: translateY(-2px);
+}
+
+.botao-claro {
+    background-color: white;
+    color: #873052;
+}
+
+.botao-claro:hover {
+    background-color: #ffd6e8;
+}
+
+.banner .botao {
+    margin: 5px;
+}
+
+
+/* SOBRE */
+
+.sobre {
+    padding: 75px 20px;
+    text-align: center;
+    max-width: 950px;
+    margin: auto;
+}
+
+.sobre h2 {
+    color: #91385f;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.sobre p:not(.destaque) {
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+
+/* SERVIÇOS */
+
+.servicos {
+    padding: 70px 5%;
+    text-align: center;
+    background-color: #fce8f0;
+}
+
+.servicos h2,
+.diferenciais h2,
+.contato h2 {
+    color: #91385f;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background-color: white;
+    padding: 35px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(142,49,93,0.15);
+}
+
+.card h3 {
+    color: #91385f;
+    margin: 15px 0;
+}
+
+.card p {
+    line-height: 1.7;
+}
+
+.emoji {
+    font-size: 42px;
+}
+
+
+/* DIFERENCIAIS */
+
+.diferenciais {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.diferenciais-lista {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 35px auto 0;
+}
+
+.diferencial {
+    background-color: #fce8f0;
+    padding: 25px 15px;
+    border-radius: 15px;
+    color: #873052;
+    font-weight: bold;
+}
+
+.diferencial span {
+    font-size: 35px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+
+/* CONTATO */
+
+.contato {
+    background-color: #fce8f0;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+
+/* REDES SOCIAIS */
+
+.redes-sociais {
+    margin: 35px auto;
+}
+
+.redes-sociais h3 {
+    color: #91385f;
+    margin-bottom: 20px;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    padding: 14px 25px;
+    margin: 8px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.instagram {
+    background: linear-gradient(
+        45deg,
+        #f09433,
+        #dc2743,
+        #bc1888
+    );
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.redes-sociais a:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+/* ENDEREÇO */
+
+.endereco {
+    background-color: white;
+    max-width: 450px;
+    margin: 35px auto;
+    padding: 30px;
+    border-radius: 15px;
+    line-height: 2;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.endereco h3 {
+    color: #91385f;
+    margin-bottom: 10px;
+}
+
+.endereco .botao {
+    margin-top: 15px;
+}
+
+
+/* FORMULÁRIO */
+
+form {
+    background-color: white;
+    max-width: 500px;
+    margin: 35px auto;
+    padding: 35px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+form h3 {
+    color: #91385f;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+form label {
+    font-weight: bold;
+    color: #873052;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #e2b5c9;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: white;
+    color: #444;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #c66b93;
+    border-color: transparent;
+}
+
+form button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.aviso-formulario {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    line-height: 1.5;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #8e315d;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    line-height: 2;
+}
+
+footer h2 {
+    color: white;
+    font-size: 30px;
+}
+
+.footer-redes {
+    margin: 15px 0;
+}
+
+.footer-redes a {
+    color: #ffd6e8;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+.footer-redes a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .diferenciais-lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .logo h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 14px;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .banner {
+        min-height: 380px;
+        text-align: center;
+        justify-content: center;
+        padding: 40px 20px;
+        background-position: center;
+    }
+
+    .banner h2 {
+        font-size: 32px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .banner .botao {
+        display: block;
+        width: fit-content;
+        margin: 12px auto;
+    }
+
+    .sobre {
+        padding: 50px 20px;
+    }
+
+    .sobre h2,
+    .servicos h2,
+    .diferenciais h2,
+    .contato h2 {
+        font-size: 27px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .diferenciais-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .redes-sociais a {
+        display: block;
+        max-width: 260px;
+        margin: 12px auto;
+    }
+
+    form,
+    .endereco {
+        padding: 22px;
+    }
+
+    .botao-header {
+        margin-top: 5px;
+    }
+
+}
+
+
+/* ACESSIBILIDADE: REDUZIR ANIMAÇÕES */
+
+@media (prefers-reduced-motion: reduce) {
+
+    * {
+        scroll-behavior: auto;
+        transition: none !important;
+    }
+
+}
